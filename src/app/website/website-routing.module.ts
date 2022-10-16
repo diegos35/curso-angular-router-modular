@@ -27,8 +27,8 @@ const routes: Routes = [
         component: HomeComponent,
       },
       {
-        path: 'category/:id',
-        component: CategoryComponent,
+        path: 'category', //Chunk lazy loading
+        loadChildren: () => import('./pages/category/category.module').then(m => m.CategoryModule)
       },
       {
         path: 'product/:id',
