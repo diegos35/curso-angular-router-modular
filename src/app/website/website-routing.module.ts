@@ -28,7 +28,10 @@ const routes: Routes = [
       },
       {
         path: 'category', //Chunk lazy loading
-        loadChildren: () => import('./pages/category/category.module').then(m => m.CategoryModule)
+        loadChildren: () => import('./pages/category/category.module').then(m => m.CategoryModule),
+        data: { //precarga
+          preload: true
+        }
       },
       {
         path: 'product/:id',
