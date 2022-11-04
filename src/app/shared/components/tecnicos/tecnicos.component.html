@@ -1,0 +1,43 @@
+<div class="container">
+    <button class="boton--verde">Agregar Tecnico</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th> Nombre </th>
+          <th> Nómina </th>
+          <th> Estado </th>
+          <th> Identificación </th>
+          <th> EPS </th>
+          <th> Pensión </th>
+          <th> Cargo </th>
+          <th> Dirección </th>
+          <th> Barrio </th>
+          <th> Movilidad </th>
+          <th> Costo </th>
+          <th> Banco </th>
+          <th> Número de cuenta </th>
+          <!-- <th data-test-id="amount" class="sortable" (click)="onAmount()">Amount ($)</th>
+        <th>Available Balance</th> -->
+        </tr>
+      </thead>
+
+      <tbody data-test-id="records-body">
+        <tr *ngFor="let item of technical">
+          <td> {{ item.nombre }} </td>
+          <td> {{ item.payroll? 'Si' :  'No' }} </td>
+          <!-- <td>{{item.type === 1 ? "Debit" : "Credit"}}</td> -->
+          <td> {{ item.status ? 'Activo' :  'Inactivo'}} </td>
+          <td> {{ item.idNumber }} </td>
+          <td> {{ item.eps }} </td>
+          <td> {{ item.pension }} </td>
+          <td> {{ item.positionHeld }} </td>
+          <td> {{ item.address }} </td>
+          <td> {{ item.neigborhood }} </td>
+          <td> {{ item.mobility }} </td>
+          <td> {{ item.cost  | currency}} </td>
+          <td> {{ item.bank }} </td>
+          <td> {{ item.accountNumber }} </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

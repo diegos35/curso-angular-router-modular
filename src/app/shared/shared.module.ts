@@ -9,6 +9,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ImgComponent } from '../shared/components/img/img.component';
 import { RouterModule } from '@angular/router';
 import { SwiperModule } from 'swiper/angular';
+import { TecnicosComponent } from './components/tecnicos/tecnicos.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SwiperModule } from 'swiper/angular';
     ReversePipe,
     TimeAgoPipe,
     HighlightDirective,
+    TecnicosComponent,
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,7 @@ import { SwiperModule } from 'swiper/angular';
     ReversePipe,
     TimeAgoPipe,
     HighlightDirective,
+    TecnicosComponent
   ]
 })
 export class SharedModule { }

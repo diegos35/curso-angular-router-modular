@@ -13,6 +13,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 
 import { AuthGuard } from '../guards/auth.guard';
 import { ExitGuard } from '../guards/exit.guard';
+import { TecnicosComponent } from '../shared/components/tecnicos/tecnicos.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
         data: { //precarga
           preload: true
         }
+      },
+      {
+        path: 'tecnicos',
+        component: TecnicosComponent,
       },
       {
         path: 'product/:id',
