@@ -10,6 +10,7 @@ import { ImgComponent } from '../shared/components/img/img.component';
 import { RouterModule } from '@angular/router';
 import { SwiperModule } from 'swiper/angular';
 import { TecnicosComponent } from './components/tecnicos/tecnicos.component';
+import { TechniciansFormComponent } from './components/tecnicos/technicians-form/technicians-form.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { TecnicosComponent } from './components/tecnicos/tecnicos.component';
     TimeAgoPipe,
     HighlightDirective,
     TecnicosComponent,
+    TechniciansFormComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { TecnicosComponent } from './components/tecnicos/tecnicos.component';
     ReversePipe,
     TimeAgoPipe,
     HighlightDirective,
-    TecnicosComponent
+    TecnicosComponent,
+    TechniciansFormComponent
   ]
 })
 export class SharedModule { }

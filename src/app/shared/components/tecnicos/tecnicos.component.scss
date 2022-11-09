@@ -1,7 +1,7 @@
 .container{
-  /* width: 100%;
-  max-width: 100%; */
-  margin: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin: 20;
  }
 
 .table {
@@ -34,23 +34,11 @@
   background-color: #eeeeee;
 }
 
-.boton {
-	border: none;
-	min-width: 180px;
-	height: 50px;
-	padding: 0 30px;
-	background: #000;
-	color: #fff;
-	display: inline-block;
-	border-radius: 100px;
-	text-decoration: none;
-	display: inline-flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #403CC2;
-	transition: .3s ease all;
+.btn{
+  margin: 5px;
 }
 
-.boton--verde {
-	background: #7BA771;
+.btn-add {
+  display: flex;
+  justify-content: flex-end;
 }

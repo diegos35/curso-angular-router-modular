@@ -1,5 +1,12 @@
 <div class="container">
-    <button class="boton--verde">Agregar Tecnico</button>
+  <div class="btn-add">
+    <button type="button"
+      class="btn btn-success"
+      (click)="openModal()">
+      <i class="fa fa-home"></i>
+      Agregar Tecnico
+    </button>
+  </div>
     <table class="table">
       <thead>
         <tr>
@@ -40,4 +47,8 @@
         </tr>
       </tbody>
     </table>
+</div>
+
+<div *ngIf="showModal">
+  <app-technicians-form></app-technicians-form>
 </div>

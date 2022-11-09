@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Tecnico } from 'src/app/models/tecnico.model';
+import { TechniciansFormComponent } from './technicians-form/technicians-form.component';
 
 @Component({
   selector: 'app-tecnicos',
@@ -10,10 +11,18 @@ export class TecnicosComponent implements OnInit {
   public filterDate: string = '';
   public technical: Tecnico[] = [];
   public filteredTxns: Tecnico[] = [];
+  public showModal: boolean = false;
+
+  constructor(){
+  }
 
   ngOnInit() {
     this.technical = getTransactions();
     console.log(this.technical);
+
+  }
+
+  openModal(){
 
   }
 
