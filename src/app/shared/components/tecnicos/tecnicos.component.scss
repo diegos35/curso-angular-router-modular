@@ -1,8 +1,8 @@
-.container{
+/* .container {
   width: 100%;
   max-width: 100%;
   margin: 20;
- }
+}
 
 .table {
   width: 100%;
@@ -10,35 +10,62 @@
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
-  padding:0;
+  padding: 0;
   table-layout: fixed; //mismo ancho de columns
-}
+} */
 
 .table tr {
   background-color: #f8f8f8;
-  border:1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
-.table th, table td {
+.table th,
+table td {
   font-size: 16px;
   padding: 8px;
 }
 
-.table thead th{
+.table thead th {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #ddd;
 }
 
-.table tbody tr:hover{
+.table tbody tr:hover {
   background-color: #eeeeee;
 }
 
-.btn{
+.btn {
   margin: 5px;
 }
 
 .btn-add {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Simple CSS for flexbox table on mobile */
+@media (max-width: 800px) {
+  table thead {
+    left: -9999px;
+    position: absolute;
+    visibility: hidden;
+  }
+  table tr {
+    border-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  table td {
+    border: 1px solid;
+    margin: 0 -1px -1px 0;
+    padding-top: 35px;
+    position: relative;
+    width: 50%;
+  }
+  table td span {
+    display: block;
+  }
 }

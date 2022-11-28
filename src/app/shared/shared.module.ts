@@ -38,6 +38,9 @@ import { TechniciansFormComponent } from './components/tecnicos/technicians-form
     HighlightDirective,
     TecnicosComponent,
     TechniciansFormComponent
-  ]
+  ],
+  entryComponents: [
+    TechniciansFormComponent
+  ],
 })
 export class SharedModule { }
